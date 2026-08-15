@@ -16,7 +16,6 @@
 .claudian/sessions/
 
 # 不需要同步的資料夾
-002 FREEWRITE/
 003 CALENDAR/
 999 Reference/
 /006 Coding Projects/
