@@ -1,0 +1,61 @@
+/* ============================================
+   把最底下那條狀態列整個縮小
+   （檔案路徑、backlinks、字數統計、同步圖示全部）
+   ============================================ */
+
+.status-bar {
+  --status-bar-font-size: 10px;   /* ← 想更小改這裡，預設 12px */
+  font-size: var(--status-bar-font-size);
+  padding: 0 6px;
+  min-height: unset;
+  line-height: 1.1;
+}
+
+/* 每個項目左右與上下都收緊 */
+.status-bar .status-bar-item {
+  font-size: var(--status-bar-font-size);
+  padding: 2px 5px;
+  line-height: 1.1;
+}
+
+/* 圖示（鉛筆、同步、打勾）跟著縮 */
+.status-bar .status-bar-item svg,
+.status-bar .status-bar-item .status-bar-item-icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* Quick Explorer 的路徑麵包屑 */
+.status-bar #quick-explorer {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.status-bar #quick-explorer .explorable {
+  font-size: var(--status-bar-font-size);
+  opacity: 0.5;                   /* 變淡，不搶視線 */
+}
+
+.status-bar #quick-explorer .explorable:hover,
+.status-bar #quick-explorer .explorable.selected {
+  opacity: 1;                     /* 滑過去才亮起來 */
+}
+
+
+/* ── 想更進一步的話，把下面想要的解除註解 ────────── */
+
+/* 平常半透明，滑鼠移到底部才浮出來 */
+/*
+.status-bar { opacity: 0.25; transition: opacity 150ms ease; }
+.status-bar:hover { opacity: 1; }
+*/
+
+/* 只藏檔案路徑，其他留著 */
+/*
+#quick-explorer { display: none; }
+*/
+
+/* 整條都不要 */
+/*
+.status-bar { display: none; }
+*/

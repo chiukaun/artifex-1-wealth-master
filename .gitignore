@@ -1,0 +1,28 @@
+
+# macOS 系統垃圾檔（會造成無意義的衝突）
+.DS_Store
+.Trash/
+
+# Obsidian 每次開關都會變動的狀態檔（多機同步的衝突來源）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian 外掛的編譯產物（重裝外掛即可取得，不需入庫）
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/*.js.map
+
+# Claudian 對話紀錄（工具狀態，單檔可達數 MB，不需入庫）
+.claudian/sessions/
+
+# 不需要同步的資料夾
+002 FREEWRITE/
+003 CALENDAR/
+999 Reference/
+/006 Coding Projects/
+
+# 不追蹤 PDF 檔案
+*.pdf
+
+# 特殊檔名
+*％*.md
