@@ -6,6 +6,7 @@
 # Obsidian 每次開關都會變動的狀態檔（多機同步的衝突來源）
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/graph.json
 
 # Obsidian 外掛的編譯產物（重裝外掛即可取得，不需入庫）
 .obsidian/plugins/*/main.js
@@ -22,6 +23,9 @@
 
 # 不追蹤 PDF 檔案
 *.pdf
+
+# 手動打包的備份（git 本身就是版本備份，壓縮檔會永久佔庫又壓不動）
+*.tar.gz
 
 # 特殊檔名
 *％*.md
